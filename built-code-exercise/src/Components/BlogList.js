@@ -47,7 +47,7 @@ const BlogList = () => {
               <div className="d-flex justify-content-end">
 
               <Button variant="primary" onClick={() => navigate(`/edit/${post.id}`)}>Edit</Button>
-      <Button variant="danger" onClick={handleDelete}>Delete</Button>
+      <Button variant="danger" onClick={() => handleDelete(post.id)}>Delete</Button>
             </div>
             </Card.Body>
           </Card>
